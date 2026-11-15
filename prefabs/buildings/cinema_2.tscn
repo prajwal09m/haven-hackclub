@@ -1,0 +1,41 @@
+[gd_scene load_steps=8 format=3 uid="uid://dcjfhuom3ousg"]
+
+[ext_resource type="PackedScene" uid="uid://7ec67utaogo1" path="res://prefabs/buildings/Cinema.glb" id="1_w4q8q"]
+[ext_resource type="Shader" uid="uid://cry7030nd6qv2" path="res://shaders/ps1_models.gdshader" id="2_lguhm"]
+[ext_resource type="Texture2D" uid="uid://cxpqarm7cdj6o" path="res://assets/textures/buildings/cinema/Cinema_stone_brick_wall.jpg" id="3_s13fw"]
+[ext_resource type="Texture2D" uid="uid://p7b3bkbn0vo2" path="res://assets/textures/buildings/cinema/Cinema_facasde2.jpg" id="4_vohgv"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xoc3k"]
+render_priority = 0
+shader = ExtResource("2_lguhm")
+shader_parameter/albedo_texture = ExtResource("3_s13fw")
+shader_parameter/texture_tile = Vector2(1, 1)
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/affine_weight = 0.1
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rev4n"]
+render_priority = 0
+shader = ExtResource("2_lguhm")
+shader_parameter/albedo_texture = ExtResource("4_vohgv")
+shader_parameter/texture_tile = Vector2(1, 1)
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/affine_weight = 0.1
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_or4kd"]
+render_priority = 0
+shader = ExtResource("2_lguhm")
+shader_parameter/albedo_texture = ExtResource("4_vohgv")
+shader_parameter/texture_tile = Vector2(1, 1)
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/affine_weight = 0.1
+
+[node name="Cinema2" instance=ExtResource("1_w4q8q")]
+
+[node name="Cinema" parent="." index="0"]
+transform = Transform3D(3, 0, 0, 0, -4.3274273e-09, -1.5, 0, 0.099, -6.556708e-08, 2.5190048, -0.6917515, -2.592575)
+surface_material_override/0 = SubResource("ShaderMaterial_xoc3k")
+surface_material_override/1 = SubResource("ShaderMaterial_rev4n")
+surface_material_override/4 = SubResource("ShaderMaterial_or4kd")

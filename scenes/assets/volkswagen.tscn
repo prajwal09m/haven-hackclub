@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://dirvkrbis8gpu"]
+
+[ext_resource type="PackedScene" uid="uid://dp6cxub3dkm6p" path="res://prefabs/decoration/dasauto.glb" id="1_pbogw"]
+[ext_resource type="Shader" uid="uid://cry7030nd6qv2" path="res://shaders/ps1_models.gdshader" id="2_4ktm0"]
+[ext_resource type="Texture2D" uid="uid://bwvmvqh0b5imi" path="res://assets/textures/decorations/dasauto/dasauto_0.png" id="3_o8nnn"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cdryi"]
+render_priority = 0
+shader = ExtResource("2_4ktm0")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_o8nnn")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[node name="Volkswagen" instance=ExtResource("1_pbogw")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+
+[node name="Cube_Body_0" parent="Sketchfab_model/0845ed0885874720a6dd4100ba1cac3c_fbx/RootNode/Cube" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_cdryi")

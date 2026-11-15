@@ -1,0 +1,64 @@
+[gd_scene load_steps=11 format=3 uid="uid://db26m0mx0og0p"]
+
+[ext_resource type="PackedScene" uid="uid://1sdfe52x01po" path="res://prefabs/buildings/low-poly_industrial_building.glb" id="1_0pxlm"]
+[ext_resource type="Shader" uid="uid://cry7030nd6qv2" path="res://shaders/ps1_models.gdshader" id="2_n64sv"]
+[ext_resource type="Texture2D" uid="uid://b4wrd8nrexxob" path="res://assets/textures/buildings/industrial_building/low-poly_industrial_building_0.jpg" id="3_ky2ub"]
+[ext_resource type="Texture2D" uid="uid://twnxus4aix5c" path="res://assets/textures/buildings/industrial_building/low-poly_industrial_building_1.jpg" id="4_7307q"]
+[ext_resource type="Texture2D" uid="uid://bft2b2684t3nh" path="res://assets/textures/buildings/industrial_building/low-poly_industrial_building_2.jpg" id="5_dpffu"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mvyu5"]
+render_priority = 0
+shader = ExtResource("2_n64sv")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_ky2ub")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5rwhk"]
+render_priority = 0
+shader = ExtResource("2_n64sv")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_7307q")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6lvlf"]
+render_priority = 0
+shader = ExtResource("2_n64sv")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_ky2ub")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ea31l"]
+render_priority = 0
+shader = ExtResource("2_n64sv")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_7307q")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uhojs"]
+render_priority = 0
+shader = ExtResource("2_n64sv")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("5_dpffu")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[node name="IndustrialBuilding" instance=ExtResource("1_0pxlm")]
+
+[node name="IndusrtyBuilding1_concrete06_Mat_004_0" parent="Sketchfab_model/IndustrialBuildings_fbx/RootNode/IndusrtyBuilding1" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_mvyu5")
+
+[node name="IndusrtyBuilding1_concrete02_Mat_0" parent="Sketchfab_model/IndustrialBuildings_fbx/RootNode/IndusrtyBuilding1" index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_5rwhk")
+
+[node name="IndustryBuilding1D_concrete06_Mat_005_0" parent="Sketchfab_model/IndustrialBuildings_fbx/RootNode/IndustryBuilding1D" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_6lvlf")
+
+[node name="IndustryBuilding1D_concrete02_Mat_001_0" parent="Sketchfab_model/IndustrialBuildings_fbx/RootNode/IndustryBuilding1D" index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_ea31l")
+
+[node name="IndustryBuilding1D_rock08_Mat_002_0" parent="Sketchfab_model/IndustrialBuildings_fbx/RootNode/IndustryBuilding1D" index="2"]
+surface_material_override/0 = SubResource("ShaderMaterial_uhojs")

@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://bn0ml083kdupg"]
+
+[ext_resource type="PackedScene" uid="uid://b53suk77hg0li" path="res://prefabs/decoration/psx_low-poly_car_-_renault.glb" id="1_2gp7c"]
+[ext_resource type="Shader" uid="uid://cry7030nd6qv2" path="res://shaders/ps1_models.gdshader" id="2_iura0"]
+[ext_resource type="Texture2D" uid="uid://b8ul13g3kqo64" path="res://assets/textures/decorations/car/psx_low-poly_car_-_renault_0.png" id="3_hoagx"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5bosb"]
+render_priority = 0
+shader = ExtResource("2_iura0")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_hoagx")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[node name="Car" instance=ExtResource("1_2gp7c")]
+
+[node name="Car_Material_002_0" parent="Sketchfab_model/b38e473ff2484b0b9968d3cd78b5ee6f_fbx/RootNode/Car" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_5bosb")
+
+[node name="Tire_1_tire1_002_0" parent="Sketchfab_model/b38e473ff2484b0b9968d3cd78b5ee6f_fbx/RootNode/Car/Tire_1" index="0"]
+transform = Transform3D(1, -2.9802322e-08, -7.1054274e-15, 2.9802322e-08, 1, 7.1054274e-15, 0, -1.4210855e-14, 1, -0.089701414, -0.08126795, 0)
+
+[node name="Tire_2_tire1_002_0" parent="Sketchfab_model/b38e473ff2484b0b9968d3cd78b5ee6f_fbx/RootNode/Car/Tire_2" index="0"]
+transform = Transform3D(1, -2.9802322e-08, -1.4210855e-14, 2.9802322e-08, 1, 1.4210855e-14, -7.1054274e-15, -2.842171e-14, 1, -0.08622122, -0.107097924, 0)
+
+[node name="Tire_3_tire1_002_0" parent="Sketchfab_model/b38e473ff2484b0b9968d3cd78b5ee6f_fbx/RootNode/Car/Tire_3" index="0"]
+transform = Transform3D(1, -2.9802322e-08, -2.1316282e-14, 2.9802322e-08, 1, -4.2632564e-14, -4.2632564e-14, 7.1054274e-15, 1, 0.006990552, -0.12626427, 2.9802322e-08)
+
+[node name="Tire_4_tire1_002_0" parent="Sketchfab_model/b38e473ff2484b0b9968d3cd78b5ee6f_fbx/RootNode/Car/Tire_4" index="0"]
+transform = Transform3D(1, -2.9802322e-08, 0, 2.9802322e-08, 1, -7.1054274e-15, -7.1054274e-15, 7.1054274e-15, 1, 0.14924502, -0.16473258, 2.9802322e-08)

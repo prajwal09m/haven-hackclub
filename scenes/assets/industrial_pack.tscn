@@ -1,0 +1,117 @@
+[gd_scene load_steps=20 format=3 uid="uid://chswbimkr2l8k"]
+
+[ext_resource type="PackedScene" uid="uid://c51m28aqj7iea" path="res://prefabs/buildings/psx_industrial_pack.glb" id="1_cv8le"]
+[ext_resource type="Shader" uid="uid://cry7030nd6qv2" path="res://shaders/ps1_models.gdshader" id="2_2vye0"]
+[ext_resource type="Texture2D" uid="uid://c1pykq8vdbpwu" path="res://assets/textures/buildings/industrial_pack/psx_industrial_pack_0.jpg" id="3_cjypv"]
+[ext_resource type="Texture2D" uid="uid://cb05h7c2ma84p" path="res://assets/textures/buildings/industrial_pack/psx_industrial_pack_1.png" id="4_v6qxv"]
+[ext_resource type="Texture2D" uid="uid://0f26qcu2t1m7" path="res://assets/textures/buildings/industrial_pack/psx_industrial_pack_2.png" id="5_eefnb"]
+[ext_resource type="Texture2D" uid="uid://cgnu3vnicn4yd" path="res://assets/textures/buildings/industrial_pack/psx_industrial_pack_3.jpg" id="6_xtkq7"]
+[ext_resource type="Texture2D" uid="uid://b6ofi6xo57j3k" path="res://assets/textures/buildings/industrial_pack/psx_industrial_pack_4.png" id="7_wch2d"]
+[ext_resource type="Texture2D" uid="uid://dss5t1nealmq1" path="res://assets/textures/buildings/industrial_pack/psx_industrial_pack_5.png" id="8_77cwn"]
+[ext_resource type="Texture2D" uid="uid://ctic3l61ik4j6" path="res://assets/textures/buildings/industrial_pack/psx_industrial_pack_6.png" id="9_2av5k"]
+[ext_resource type="Texture2D" uid="uid://c0ane1l1ifxgq" path="res://assets/textures/buildings/industrial_pack/psx_industrial_pack_7.png" id="10_276pb"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cy4d4"]
+render_priority = 0
+shader = ExtResource("2_2vye0")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_cjypv")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mi7fg"]
+render_priority = 0
+shader = ExtResource("2_2vye0")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_v6qxv")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_oqwb4"]
+render_priority = 0
+shader = ExtResource("2_2vye0")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("5_eefnb")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ugkgd"]
+render_priority = 0
+shader = ExtResource("2_2vye0")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("6_xtkq7")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_d1uxi"]
+render_priority = 0
+shader = ExtResource("2_2vye0")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("7_wch2d")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7g25l"]
+render_priority = 0
+shader = ExtResource("2_2vye0")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("8_77cwn")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tdgur"]
+render_priority = 0
+shader = ExtResource("2_2vye0")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("9_2av5k")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ds7ya"]
+render_priority = 0
+shader = ExtResource("2_2vye0")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("9_2av5k")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bqh81"]
+render_priority = 0
+shader = ExtResource("2_2vye0")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("10_276pb")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[node name="Industrial_Pack" instance=ExtResource("1_cv8le")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+
+[node name="Building01_Material_0" parent="Sketchfab_model/industrial_buildings_fbx/RootNode/Building01" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_cy4d4")
+
+[node name="Building02_Material_009_0" parent="Sketchfab_model/industrial_buildings_fbx/RootNode/Building02" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_mi7fg")
+
+[node name="Container01_Material_002_0" parent="Sketchfab_model/industrial_buildings_fbx/RootNode/Container01" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_oqwb4")
+
+[node name="Cube_garage_0" parent="Sketchfab_model/industrial_buildings_fbx/RootNode/Cube" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_ugkgd")
+
+[node name="ElectricalPanel_Material_001_0" parent="Sketchfab_model/industrial_buildings_fbx/RootNode/ElectricalPanel" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_d1uxi")
+
+[node name="LiquidReservoir" parent="Sketchfab_model/industrial_buildings_fbx/RootNode" index="5"]
+transform = Transform3D(-0.60623705, 3.343572e-07, -13.4888115, -0.795284, -1.295682e-07, 10.282387, 9.9656205e-08, 1, 5.842352e-06, 4229.7188, 250.84145, -240.97261)
+
+[node name="LiquidReservoir_Material_007_0" parent="Sketchfab_model/industrial_buildings_fbx/RootNode/LiquidReservoir" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_7g25l")
+
+[node name="Trashcan01_Material_004_0" parent="Sketchfab_model/industrial_buildings_fbx/RootNode/Trashcan01" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_tdgur")
+
+[node name="Trashcan2_Material_004_0" parent="Sketchfab_model/industrial_buildings_fbx/RootNode/Trashcan2" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_ds7ya")
+
+[node name="Ventilation_1_Ventilation_1_0" parent="Sketchfab_model/industrial_buildings_fbx/RootNode/Ventilation_1" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_bqh81")

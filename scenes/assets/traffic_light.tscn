@@ -1,0 +1,179 @@
+[gd_scene load_steps=26 format=3 uid="uid://cmmgu15k3j1g7"]
+
+[ext_resource type="PackedScene" uid="uid://nsbh5nblx1m6" path="res://prefabs/decoration/ps1_or_psx_traffic_light_street_asset.glb" id="1_lrle2"]
+[ext_resource type="Shader" uid="uid://cry7030nd6qv2" path="res://shaders/ps1_models.gdshader" id="2_m40h8"]
+[ext_resource type="Texture2D" uid="uid://bq5omd4njgq2y" path="res://assets/textures/decorations/traffic_light/ps1_or_psx_traffic_light_street_asset_0.jpg" id="3_qocyb"]
+[ext_resource type="Texture2D" uid="uid://detq4lupanvlg" path="res://assets/textures/decorations/traffic_light/ps1_or_psx_traffic_light_street_asset_4.jpg" id="4_3ds0d"]
+[ext_resource type="Texture2D" uid="uid://cuiuvssrwtl1n" path="res://assets/textures/decorations/traffic_light/ps1_or_psx_traffic_light_street_asset_5.jpg" id="5_vg7f1"]
+[ext_resource type="Texture2D" uid="uid://bs55u0xi1usnp" path="res://assets/textures/decorations/traffic_light/ps1_or_psx_traffic_light_street_asset_6.png" id="6_vg7f1"]
+[ext_resource type="Texture2D" uid="uid://c5wo0dpn37sb7" path="res://assets/textures/decorations/traffic_light/ps1_or_psx_traffic_light_street_asset_8.jpg" id="7_5sxov"]
+[ext_resource type="Texture2D" uid="uid://bgf57tu0ol402" path="res://assets/textures/decorations/traffic_light/ps1_or_psx_traffic_light_street_asset_9.jpg" id="8_w0pmy"]
+[ext_resource type="Texture2D" uid="uid://ds53wesqfqicv" path="res://assets/textures/decorations/traffic_light/ps1_or_psx_traffic_light_street_asset_7.jpg" id="9_307c8"]
+[ext_resource type="Texture2D" uid="uid://bkw75cdxd4166" path="res://assets/textures/decorations/traffic_light/ps1_or_psx_traffic_light_street_asset_3.jpg" id="10_w70op"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3ds0d"]
+render_priority = 0
+shader = ExtResource("2_m40h8")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_qocyb")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vg7f1"]
+render_priority = 0
+shader = ExtResource("2_m40h8")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_qocyb")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_m40h8"]
+render_priority = 0
+shader = ExtResource("2_m40h8")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_qocyb")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5sxov"]
+render_priority = 0
+shader = ExtResource("2_m40h8")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_3ds0d")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_w0pmy"]
+render_priority = 0
+shader = ExtResource("2_m40h8")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("5_vg7f1")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_307c8"]
+render_priority = 0
+shader = ExtResource("2_m40h8")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("6_vg7f1")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_w70op"]
+render_priority = 0
+shader = ExtResource("2_m40h8")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_3ds0d")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yhl3d"]
+render_priority = 0
+shader = ExtResource("2_m40h8")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_qocyb")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_aywmj"]
+render_priority = 0
+shader = ExtResource("2_m40h8")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("7_5sxov")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mqqj7"]
+render_priority = 0
+shader = ExtResource("2_m40h8")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("7_5sxov")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_g1e0s"]
+render_priority = 0
+shader = ExtResource("2_m40h8")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("8_w0pmy")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_57bpg"]
+render_priority = 0
+shader = ExtResource("2_m40h8")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("8_w0pmy")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_25gsc"]
+render_priority = 0
+shader = ExtResource("2_m40h8")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("9_307c8")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ka24h"]
+render_priority = 0
+shader = ExtResource("2_m40h8")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("10_w70op")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wa356"]
+render_priority = 0
+shader = ExtResource("2_m40h8")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("9_307c8")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[node name="TrafficLight" instance=ExtResource("1_lrle2")]
+
+[node name="Object_2" parent="Sketchfab_model/PS1 TRAFFIC LIGHT_obj_cleaner_materialmerger_gles" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_3ds0d")
+
+[node name="Object_4" parent="Sketchfab_model/PS1 TRAFFIC LIGHT_obj_cleaner_materialmerger_gles" index="2"]
+surface_material_override/0 = SubResource("ShaderMaterial_vg7f1")
+
+[node name="Object_5" parent="Sketchfab_model/PS1 TRAFFIC LIGHT_obj_cleaner_materialmerger_gles" index="3"]
+surface_material_override/0 = SubResource("ShaderMaterial_m40h8")
+
+[node name="Object_6" parent="Sketchfab_model/PS1 TRAFFIC LIGHT_obj_cleaner_materialmerger_gles" index="4"]
+surface_material_override/0 = SubResource("ShaderMaterial_5sxov")
+
+[node name="Object_8" parent="Sketchfab_model/PS1 TRAFFIC LIGHT_obj_cleaner_materialmerger_gles" index="6"]
+surface_material_override/0 = SubResource("ShaderMaterial_w0pmy")
+
+[node name="Object_9" parent="Sketchfab_model/PS1 TRAFFIC LIGHT_obj_cleaner_materialmerger_gles" index="7"]
+surface_material_override/0 = SubResource("ShaderMaterial_307c8")
+
+[node name="Object_11" parent="Sketchfab_model/PS1 TRAFFIC LIGHT_obj_cleaner_materialmerger_gles" index="9"]
+surface_material_override/0 = SubResource("ShaderMaterial_w70op")
+
+[node name="Object_12" parent="Sketchfab_model/PS1 TRAFFIC LIGHT_obj_cleaner_materialmerger_gles" index="10"]
+surface_material_override/0 = SubResource("ShaderMaterial_yhl3d")
+
+[node name="Object_13" parent="Sketchfab_model/PS1 TRAFFIC LIGHT_obj_cleaner_materialmerger_gles" index="11"]
+surface_material_override/0 = SubResource("ShaderMaterial_aywmj")
+
+[node name="Object_14" parent="Sketchfab_model/PS1 TRAFFIC LIGHT_obj_cleaner_materialmerger_gles" index="12"]
+surface_material_override/0 = SubResource("ShaderMaterial_mqqj7")
+
+[node name="Object_15" parent="Sketchfab_model/PS1 TRAFFIC LIGHT_obj_cleaner_materialmerger_gles" index="13"]
+surface_material_override/0 = SubResource("ShaderMaterial_g1e0s")
+
+[node name="Object_16" parent="Sketchfab_model/PS1 TRAFFIC LIGHT_obj_cleaner_materialmerger_gles" index="14"]
+surface_material_override/0 = SubResource("ShaderMaterial_57bpg")
+
+[node name="Object_17" parent="Sketchfab_model/PS1 TRAFFIC LIGHT_obj_cleaner_materialmerger_gles" index="15"]
+surface_material_override/0 = SubResource("ShaderMaterial_25gsc")
+
+[node name="Object_18" parent="Sketchfab_model/PS1 TRAFFIC LIGHT_obj_cleaner_materialmerger_gles" index="16"]
+surface_material_override/0 = SubResource("ShaderMaterial_ka24h")
+
+[node name="Object_19" parent="Sketchfab_model/PS1 TRAFFIC LIGHT_obj_cleaner_materialmerger_gles" index="17"]
+surface_material_override/0 = SubResource("ShaderMaterial_wa356")

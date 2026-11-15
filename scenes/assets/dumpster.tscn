@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://cwsa4ot8w5v0x"]
+
+[ext_resource type="PackedScene" uid="uid://bfwpetlbuqwiv" path="res://prefabs/decoration/dumpster_psx__low_poly.glb" id="1_fytdc"]
+[ext_resource type="Shader" uid="uid://cry7030nd6qv2" path="res://shaders/ps1_models.gdshader" id="2_q6jx6"]
+[ext_resource type="Texture2D" uid="uid://dlf1df4ralqna" path="res://assets/textures/decorations/dumpster/dumpster_psx__low_poly_0.png" id="3_ihd2o"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kcodi"]
+render_priority = 0
+shader = ExtResource("2_q6jx6")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_ihd2o")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_q6jx6"]
+render_priority = 0
+shader = ExtResource("2_q6jx6")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_ihd2o")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[node name="Dumpster" instance=ExtResource("1_fytdc")]
+
+[node name="dumpster_001" parent="Sketchfab_model/Dumpster_fbx/RootNode/World/Props/Dumpster" index="0"]
+transform = Transform3D(10, 0, 0, 0, -4.371139e-07, 10, 0, -10, -4.371139e-07, 871.52423, 1.9351725e-13, -631.6086)
+
+[node name="dumpster_001_dumpster-Material_002__AO_tga_0" parent="Sketchfab_model/Dumpster_fbx/RootNode/World/Props/Dumpster/dumpster_001" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_kcodi")
+
+[node name="dumpster_001_dumpster-Material_002__Untitled1_tga_0" parent="Sketchfab_model/Dumpster_fbx/RootNode/World/Props/Dumpster/dumpster_001" index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_q6jx6")

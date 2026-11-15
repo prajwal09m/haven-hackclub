@@ -1,0 +1,67 @@
+[gd_scene load_steps=10 format=3 uid="uid://rggnim3jubdj"]
+
+[ext_resource type="PackedScene" uid="uid://jvhg732ya3vf" path="res://prefabs/decoration/psx_low-poly_truck.glb" id="1_pliaq"]
+[ext_resource type="Shader" uid="uid://cry7030nd6qv2" path="res://shaders/ps1_models.gdshader" id="2_veuv5"]
+[ext_resource type="Texture2D" uid="uid://ctcptng5ks6k7" path="res://assets/textures/decorations/truck/psx_low-poly_truck_0.png" id="3_ty3y0"]
+[ext_resource type="Texture2D" uid="uid://ba5fu3sqv8q7p" path="res://assets/textures/decorations/truck/psx_low-poly_truck_3.png" id="4_ty3y0"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0jfym"]
+render_priority = 0
+shader = ExtResource("2_veuv5")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_ty3y0")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kg4ha"]
+render_priority = 0
+shader = ExtResource("2_veuv5")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_ty3y0")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_axbnf"]
+render_priority = 0
+shader = ExtResource("2_veuv5")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_ty3y0")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_m1d0a"]
+render_priority = 0
+shader = ExtResource("2_veuv5")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_ty3y0")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0x6u7"]
+render_priority = 0
+shader = ExtResource("2_veuv5")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_ty3y0")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[node name="Truck" instance=ExtResource("1_pliaq")]
+
+[node name="Car - Truck_Car_-_TruckWhite_0" parent="Sketchfab_model/376d77033a634613887978c9af9f4125_fbx/RootNode/Car - Truck" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_0jfym")
+
+[node name="Tire_005_tire1_003_0" parent="Sketchfab_model/376d77033a634613887978c9af9f4125_fbx/RootNode/Car - Truck/Tire_005" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.4210855e-14, 0, 1.4210855e-14, 1, 0, -0.07393986, -2.9802322e-08)
+surface_material_override/0 = SubResource("ShaderMaterial_kg4ha")
+
+[node name="Tire_006_tire1_003_0" parent="Sketchfab_model/376d77033a634613887978c9af9f4125_fbx/RootNode/Car - Truck/Tire_006" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, -2.842171e-14, 0, 2.842171e-14, 1, 0.020994544, -0.07750285, -5.9604645e-08)
+surface_material_override/0 = SubResource("ShaderMaterial_axbnf")
+
+[node name="Tire_007_tire1_003_0" parent="Sketchfab_model/376d77033a634613887978c9af9f4125_fbx/RootNode/Car - Truck/Tire_007" index="0"]
+transform = Transform3D(1, 0, 1.6940659e-21, 0, 1, 1.4210855e-14, 1.6940659e-21, -1.4210855e-14, 1, 0, -0.07828063, 0)
+surface_material_override/0 = SubResource("ShaderMaterial_m1d0a")
+
+[node name="Tire_008_tire1_003_0" parent="Sketchfab_model/376d77033a634613887978c9af9f4125_fbx/RootNode/Car - Truck/Tire_008" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.4210855e-14, 0, 1.4210855e-14, 1, 0, 0.06465781, 0)
+surface_material_override/0 = SubResource("ShaderMaterial_0x6u7")

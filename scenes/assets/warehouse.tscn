@@ -1,0 +1,52 @@
+[gd_scene load_steps=9 format=3 uid="uid://dgijo111sjmvk"]
+
+[ext_resource type="PackedScene" uid="uid://c7nacwunu5ouu" path="res://prefabs/buildings/ps1_old_warehouse.glb" id="1_o10kv"]
+[ext_resource type="Shader" uid="uid://cry7030nd6qv2" path="res://shaders/ps1_models.gdshader" id="2_jk264"]
+[ext_resource type="Texture2D" uid="uid://ba7bvbo5or5b2" path="res://assets/textures/buildings/warehouse/ps1_old_warehouse_1.png" id="3_61qv8"]
+[ext_resource type="Texture2D" uid="uid://du0h43efhynge" path="res://assets/textures/buildings/warehouse/ps1_old_warehouse_2.png" id="4_a2j1e"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gsufd"]
+render_priority = 0
+shader = ExtResource("2_jk264")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_61qv8")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kvbu3"]
+render_priority = 0
+shader = ExtResource("2_jk264")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_a2j1e")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0qgam"]
+render_priority = 0
+shader = ExtResource("2_jk264")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_a2j1e")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_krssq"]
+render_priority = 0
+shader = ExtResource("2_jk264")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_a2j1e")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[node name="Warehouse" instance=ExtResource("1_o10kv")]
+
+[node name="gate_Opacity_opacityAtlas01_0" parent="Sketchfab_model/dd381300ae8f445eb5141f6f299bba82_fbx/RootNode/gate_Opacity" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_gsufd")
+
+[node name="Barrel_001_Barrels_001_0" parent="Sketchfab_model/dd381300ae8f445eb5141f6f299bba82_fbx/RootNode/Barrel_001" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_kvbu3")
+
+[node name="Barrel2_001_Barrels_001_0" parent="Sketchfab_model/dd381300ae8f445eb5141f6f299bba82_fbx/RootNode/Barrel2_001" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_0qgam")
+
+[node name="Flammable_barrel_001_Barrels_001_0" parent="Sketchfab_model/dd381300ae8f445eb5141f6f299bba82_fbx/RootNode/Flammable_barrel_001" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_krssq")

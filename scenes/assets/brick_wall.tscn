@@ -1,0 +1,152 @@
+[gd_scene load_steps=19 format=3 uid="uid://d3c1habljesu0"]
+
+[ext_resource type="PackedScene" uid="uid://cjsqlfm44w2kk" path="res://prefabs/decoration/psx_style_brick_wall.glb" id="1_cxdol"]
+[ext_resource type="Shader" uid="uid://cry7030nd6qv2" path="res://shaders/ps1_models.gdshader" id="2_qshc4"]
+[ext_resource type="Texture2D" uid="uid://fxg2g5ambh4s" path="res://assets/textures/decorations/brick_wall/psx_style_brick_wall_0.jpg" id="3_1ne6y"]
+[ext_resource type="Texture2D" uid="uid://djpkf5o2ajtlq" path="res://assets/textures/decorations/brick_wall/psx_style_brick_wall_1.jpg" id="4_ii1c3"]
+[ext_resource type="Texture2D" uid="uid://6utknxfods8b" path="res://assets/textures/decorations/brick_wall/psx_style_brick_wall_2.png" id="5_ys0ha"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7qed2"]
+render_priority = 0
+shader = ExtResource("2_qshc4")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_1ne6y")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7flhi"]
+render_priority = 0
+shader = ExtResource("2_qshc4")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_ii1c3")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hlgpg"]
+render_priority = 0
+shader = ExtResource("2_qshc4")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_1ne6y")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dsgsq"]
+render_priority = 0
+shader = ExtResource("2_qshc4")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_ii1c3")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pvqgr"]
+render_priority = 0
+shader = ExtResource("2_qshc4")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("5_ys0ha")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7mbkb"]
+render_priority = 0
+shader = ExtResource("2_qshc4")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_1ne6y")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tuiwa"]
+render_priority = 0
+shader = ExtResource("2_qshc4")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_ii1c3")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6036n"]
+render_priority = 0
+shader = ExtResource("2_qshc4")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_1ne6y")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sfea8"]
+render_priority = 0
+shader = ExtResource("2_qshc4")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_ii1c3")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_f7sm7"]
+render_priority = 0
+shader = ExtResource("2_qshc4")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_1ne6y")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_okov0"]
+render_priority = 0
+shader = ExtResource("2_qshc4")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_ii1c3")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pydlv"]
+render_priority = 0
+shader = ExtResource("2_qshc4")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_1ne6y")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1cfx6"]
+render_priority = 0
+shader = ExtResource("2_qshc4")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_ii1c3")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[node name="BrickWall" instance=ExtResource("1_cxdol")]
+
+[node name="brick_Wall_corner_brick_0" parent="Sketchfab_model/a_brick_example_fbx/RootNode/brick_Wall_corner" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_7qed2")
+
+[node name="brick_Wall_corner_concrete_0" parent="Sketchfab_model/a_brick_example_fbx/RootNode/brick_Wall_corner" index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_7flhi")
+
+[node name="brick_wall_brick_0" parent="Sketchfab_model/a_brick_example_fbx/RootNode/brick_wall" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_hlgpg")
+
+[node name="brick_wall_concrete_0" parent="Sketchfab_model/a_brick_example_fbx/RootNode/brick_wall" index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_dsgsq")
+
+[node name="brick_wall_gate_bare_metal_0" parent="Sketchfab_model/a_brick_example_fbx/RootNode/brick_wall_gate" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_pvqgr")
+
+[node name="brick_wall_one_overhang_brick_0" parent="Sketchfab_model/a_brick_example_fbx/RootNode/brick_wall_one_overhang" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_7mbkb")
+
+[node name="brick_wall_one_overhang_concrete_0" parent="Sketchfab_model/a_brick_example_fbx/RootNode/brick_wall_one_overhang" index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_tuiwa")
+
+[node name="brick_wall_one_overhang_small_brick_0" parent="Sketchfab_model/a_brick_example_fbx/RootNode/brick_wall_one_overhang_small" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_6036n")
+
+[node name="brick_wall_one_overhang_small_concrete_0" parent="Sketchfab_model/a_brick_example_fbx/RootNode/brick_wall_one_overhang_small" index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_sfea8")
+
+[node name="brick_wall_pole_brick_0" parent="Sketchfab_model/a_brick_example_fbx/RootNode/brick_wall_pole" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_f7sm7")
+
+[node name="brick_wall_pole_concrete_0" parent="Sketchfab_model/a_brick_example_fbx/RootNode/brick_wall_pole" index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_okov0")
+
+[node name="brick_wall_small_brick_0" parent="Sketchfab_model/a_brick_example_fbx/RootNode/brick_wall_small" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_pydlv")
+
+[node name="brick_wall_small_concrete_0" parent="Sketchfab_model/a_brick_example_fbx/RootNode/brick_wall_small" index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_1cfx6")

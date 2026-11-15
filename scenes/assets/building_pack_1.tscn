@@ -1,0 +1,209 @@
+[gd_scene load_steps=36 format=3 uid="uid://d0tcjojqosqnh"]
+
+[ext_resource type="PackedScene" uid="uid://c8ed3luom50hy" path="res://prefabs/buildings/buildings.glb" id="1_maw7r"]
+[ext_resource type="Shader" uid="uid://cry7030nd6qv2" path="res://shaders/ps1_models.gdshader" id="2_fvcem"]
+[ext_resource type="Texture2D" uid="uid://bq2aybifn3lvv" path="res://assets/textures/buildings/buildingspack1/buildings_16.jpg" id="3_1tp48"]
+[ext_resource type="Texture2D" uid="uid://dikmmw2pbkwjt" path="res://assets/textures/buildings/buildingspack1/buildings_0.jpg" id="4_1tp48"]
+[ext_resource type="Texture2D" uid="uid://bchv0hiiqk3fg" path="res://assets/textures/buildings/buildingspack1/buildings_14.jpg" id="5_ugdt8"]
+[ext_resource type="Texture2D" uid="uid://m2c154fb7j6h" path="res://assets/textures/buildings/buildingspack1/buildings_13.jpg" id="6_1rw6f"]
+[ext_resource type="Texture2D" uid="uid://k7k1kqdabonj" path="res://assets/textures/buildings/buildingspack1/buildings_12.jpg" id="7_qp4j8"]
+[ext_resource type="Texture2D" uid="uid://bm5l0pwu31c0" path="res://assets/textures/buildings/buildingspack1/buildings_11.jpg" id="8_w5gv6"]
+[ext_resource type="Texture2D" uid="uid://bffx4c8664pnx" path="res://assets/textures/buildings/buildingspack1/buildings_10.jpg" id="9_8r5be"]
+[ext_resource type="Texture2D" uid="uid://dv2vdmpeitif7" path="res://assets/textures/buildings/buildingspack1/buildings_9.jpg" id="10_b041p"]
+[ext_resource type="Texture2D" uid="uid://gm4js11t13aq" path="res://assets/textures/buildings/buildingspack1/buildings_8.jpg" id="11_fxiiq"]
+[ext_resource type="Texture2D" uid="uid://p5khpkqjq628" path="res://assets/textures/buildings/buildingspack1/buildings_7.jpg" id="12_qrko7"]
+[ext_resource type="Texture2D" uid="uid://dh3av8x4fo7ns" path="res://assets/textures/buildings/buildingspack1/buildings_6.jpg" id="13_vlirl"]
+[ext_resource type="Texture2D" uid="uid://bscmyjbau43o7" path="res://assets/textures/buildings/buildingspack1/buildings_5.jpg" id="14_wilqd"]
+[ext_resource type="Texture2D" uid="uid://d0bkg2wdat6ht" path="res://assets/textures/buildings/buildingspack1/buildings_4.jpg" id="15_koylj"]
+[ext_resource type="Texture2D" uid="uid://dd2k7kawyim6l" path="res://assets/textures/buildings/buildingspack1/buildings_3.jpg" id="16_34ryu"]
+[ext_resource type="Texture2D" uid="uid://moc2o8wmfkl7" path="res://assets/textures/buildings/buildingspack1/buildings_2.jpg" id="17_apbqm"]
+[ext_resource type="Texture2D" uid="uid://cu2bqd6vvkki0" path="res://assets/textures/buildings/buildingspack1/buildings_1.jpg" id="18_xajb1"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ugdt8"]
+render_priority = 0
+shader = ExtResource("2_fvcem")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_1tp48")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1rw6f"]
+render_priority = 0
+shader = ExtResource("2_fvcem")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_1tp48")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qp4j8"]
+render_priority = 0
+shader = ExtResource("2_fvcem")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("5_ugdt8")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_w5gv6"]
+render_priority = 0
+shader = ExtResource("2_fvcem")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("6_1rw6f")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8r5be"]
+render_priority = 0
+shader = ExtResource("2_fvcem")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("7_qp4j8")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_b041p"]
+render_priority = 0
+shader = ExtResource("2_fvcem")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("8_w5gv6")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fxiiq"]
+render_priority = 0
+shader = ExtResource("2_fvcem")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("9_8r5be")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qrko7"]
+render_priority = 0
+shader = ExtResource("2_fvcem")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("10_b041p")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vlirl"]
+render_priority = 0
+shader = ExtResource("2_fvcem")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("11_fxiiq")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wilqd"]
+render_priority = 0
+shader = ExtResource("2_fvcem")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("12_qrko7")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_koylj"]
+render_priority = 0
+shader = ExtResource("2_fvcem")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("13_vlirl")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_34ryu"]
+render_priority = 0
+shader = ExtResource("2_fvcem")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("14_wilqd")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_apbqm"]
+render_priority = 0
+shader = ExtResource("2_fvcem")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("15_koylj")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xajb1"]
+render_priority = 0
+shader = ExtResource("2_fvcem")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("16_34ryu")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_77xqc"]
+render_priority = 0
+shader = ExtResource("2_fvcem")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("17_apbqm")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_n60hf"]
+render_priority = 0
+shader = ExtResource("2_fvcem")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("18_xajb1")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0n2sn"]
+render_priority = 0
+shader = ExtResource("2_fvcem")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("11_fxiiq")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[node name="BuildingPack1" instance=ExtResource("1_maw7r")]
+
+[node name="Material-material" parent="Sketchfab_model/Collada visual scene group/Cube" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_ugdt8")
+
+[node name="Material_001-material" parent="Sketchfab_model/Collada visual scene group/Cube_001" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_1rw6f")
+
+[node name="Material_002-material" parent="Sketchfab_model/Collada visual scene group/Cube_002" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_qp4j8")
+
+[node name="Material_003-material" parent="Sketchfab_model/Collada visual scene group/Plane" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_w5gv6")
+
+[node name="Material_004-material" parent="Sketchfab_model/Collada visual scene group/Cube_003" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_8r5be")
+
+[node name="Material_005-material" parent="Sketchfab_model/Collada visual scene group/Cube_004" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_b041p")
+
+[node name="Material_006-material" parent="Sketchfab_model/Collada visual scene group/Cube_005" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_fxiiq")
+
+[node name="Material_007-material" parent="Sketchfab_model/Collada visual scene group/Cube_006" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_qrko7")
+
+[node name="Material_008-material" parent="Sketchfab_model/Collada visual scene group/Cube_007" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_vlirl")
+
+[node name="Material_009-material" parent="Sketchfab_model/Collada visual scene group/Cube_008" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_wilqd")
+
+[node name="Material_010-material" parent="Sketchfab_model/Collada visual scene group/Cube_009" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_koylj")
+
+[node name="Material_011-material" parent="Sketchfab_model/Collada visual scene group/Cube_010" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_34ryu")
+
+[node name="Material_012-material" parent="Sketchfab_model/Collada visual scene group/Cube_011" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_apbqm")
+
+[node name="Material_013-material" parent="Sketchfab_model/Collada visual scene group/Cube_012" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_xajb1")
+
+[node name="Material_014-material" parent="Sketchfab_model/Collada visual scene group/Cube_013" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_77xqc")
+
+[node name="Material_015-material" parent="Sketchfab_model/Collada visual scene group/Cube_014" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_n60hf")
+
+[node name="Material_016-material" parent="Sketchfab_model/Collada visual scene group/Cube_015" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_0n2sn")

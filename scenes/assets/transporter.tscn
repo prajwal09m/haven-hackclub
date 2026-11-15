@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://ci0m5w6fvgbc1"]
+
+[ext_resource type="Shader" uid="uid://cry7030nd6qv2" path="res://shaders/ps1_models.gdshader" id="1_71olv"]
+[ext_resource type="PackedScene" uid="uid://botj5yq4e2v5l" path="res://prefabs/decoration/transporter.glb" id="1_g3lkt"]
+[ext_resource type="Texture2D" uid="uid://f5s0lkksvui6" path="res://assets/textures/decorations/transporter/transporter_0.jpg" id="3_buum8"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6hbfc"]
+render_priority = 0
+shader = ExtResource("1_71olv")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_buum8")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[node name="Transporter" instance=ExtResource("1_g3lkt")]
+
+[node name="Cube_006_GregorVan_0" parent="Sketchfab_model/6931dbbc24d44d03b6397f5a49201c22_fbx/RootNode/Cube_006" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_6hbfc")

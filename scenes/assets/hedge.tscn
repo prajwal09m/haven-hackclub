@@ -1,0 +1,67 @@
+[gd_scene load_steps=7 format=4 uid="uid://bsvsw2w2vwux6"]
+
+[ext_resource type="Shader" uid="uid://cry7030nd6qv2" path="res://shaders/ps1_models.gdshader" id="2_wi300"]
+[ext_resource type="Texture2D" uid="uid://dpgxr5gn7qsmb" path="res://assets/textures/decorations/hedge/psx_style_hedge_0.jpg" id="3_2qebi"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5jnvf"]
+resource_name = "hedge"
+cull_mode = 2
+shading_mode = 0
+albedo_texture = ExtResource("3_2qebi")
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_27m3p"]
+_surfaces = [{
+"aabb": AABB(-0.338709, -0.011531216, -0.8156234, 0.6711347, 1.7538943, 1.6683257),
+"format": 34896613377,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAQADAAIAAgAEAAAAAgADAAQABQAEAAMABQAGAAQABwAFAAMABgAIAAQAAAAEAAgABgAJAAgABwADAAoAAQAKAAMACwAHAAoAAAAMAAEADAAKAAEACwAKAA0ADAANAAoADgALAA0ADwANAAwADgANABAADwAQAA0ACQAOABAACQAQAAgAEQAQAA8AEQAPAAwAEQAIABAAEQAMAAAAAAAIABEA"),
+"name": "hedge",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 18,
+"vertex_data": PackedByteArray("/3///2IDAAAmCE30nPwAACYITfRiAwAAAAA48AAAAAD/f7X8AAAAAAAAAAAAAAAA/38AAAAAAAAAAAAA//8AAP//OPAAAAAA//8AAAAAAAAAADjw//8AAP9/AAD//wAA/3///5z8AAD/f7X8//8AAP//AAD//wAA2PdN9Jz8AAD//zjw//8AANj3TfRiAwAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_r6bpt"]
+resource_name = "Sketchfab_Scene_Object_0"
+_surfaces = [{
+"aabb": AABB(-0.338709, -0.011531216, -0.8156234, 0.6711347, 1.7538943, 1.6683257),
+"attribute_data": PackedByteArray("T8FZ6v4fr8mVwRfLuR/x6DZ/xSw+XuPWNn97zj5exSwu4TIs7Tw8zi7hPM7tPDIshH4SLaxdhtaEfibOrF0SLdU8Js7VPBItYeGwK2k8bs5h4W7OaTywKwzCbstTIO/p68HA6UogrMotxrLRoBjAzvMastGAyMDOfrZD5B2RNOBekybjfrbj4Ynhqtf8M7fUTzaq19zjt9RZiY3PMmZhzHNoVM9ZiS3N1tdf43624+F+tkPkF9pt4COrxs9ZiS3NWYmNz2St08yRXRIsUzwdz5Fdl9dTPBIs"),
+"format": 34896613399,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0ADwAQAA0ADwARABAAEgATABQAEgAVABMAFgAXABgAFgAZABcAGgAbABwAGgAdABsAHgAfACAAHgAhAB8AIgAjACQAIgAlACMAJgAnACgAJgApACcAKgArACwAKgAtACsALgAvADAALgAxAC8AMgAzADQAMgA1ADMA"),
+"material": SubResource("StandardMaterial3D_5jnvf"),
+"name": "hedge",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 54,
+"vertex_data": PackedByteArray("/3///2IDp9smCE30nPyn2yYITfRiA6fb/3///5z8p9v//wAA///+f/9/tfz///5///848P///n//fwAA///+fwAAAAD///8/AAA48AAA/z8AADjw////PwAAAAAAAP8/AAAAAAAAAAD/f7X8AAAAAAAAOPAAAAAA/38AAAAAAAD//zjwAAAAAP//AAAAAAAA//8AAAAA/z///zjw////P///OPAAAP8///8AAP///z/Y9030YgNDMP9///+c/Fww/3///2IDPzDY9030nPxgMCYITfSc/M47AAA48AAAzjsmCE30YgPOOwAAOPD//847/3///2ID4QT//zjwAACIBNj3TfRiA30E/3+1/AAA6ATY9030YgPOO///OPD//8472PdN9Jz8zjv//zjwAADOO/9///+c/JxeAAA48P//Z14mCE30nPxgXv9/tfz//59eJghN9GIDnwT/f7X8AAB6BP9///9iA3gEAAA48AAAoATY9030nPxnXv9/tfz//zNe/3///5z8L17//zjw//9qXv9/AAD///5/AAA48P///n//f7X8///+fwAAAAD///5/CNzbLQjc2y0I3NstCNzbLf9/////f////3////9/////f////3////9/////f////3/+//9//v//f/7//3////9//v//f////38AAP9/AAD/fwAA/38AAN/N7SbtzREn3c3nJu/NFyfUmVXM1JlVzNSZVczUmVXM4VT3By5U2wgYVPcI71TmB6mz1Bmps9QZqbPUGamz1BlA8wOlPvTWpV308KUs8/OkXndb1AF3EtT7dg7UYndf1CvaOnRq2SJ1X9kwdTTaL3T/f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_27m3p")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_r6bpt"]
+render_priority = 0
+shader = ExtResource("2_wi300")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_2qebi")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[node name="Hedge" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 2.220446e-16, 1, 0, -1, 2.220446e-16, 0, 0, 0)
+
+[node name="root" type="Node3D" parent="."]
+
+[node name="GLTF_SceneRootNode" type="Node3D" parent="root"]
+transform = Transform3D(1, 0, 0, 0, 2.220446e-16, -1, 0, 1, 2.220446e-16, 0, 0, 0)
+
+[node name="HEDGE_30" type="Node3D" parent="root/GLTF_SceneRootNode"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0026636124, 0, 0.007041335)
+
+[node name="Object_4" type="MeshInstance3D" parent="root/GLTF_SceneRootNode/HEDGE_30"]
+mesh = SubResource("ArrayMesh_r6bpt")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("ShaderMaterial_r6bpt")

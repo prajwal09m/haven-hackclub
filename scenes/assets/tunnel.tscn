@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://dyarfe23f8hmv"]
+
+[ext_resource type="PackedScene" uid="uid://ceswhwgd071lt" path="res://prefabs/buildings/tunnel.glb" id="1_igmw8"]
+[ext_resource type="Shader" uid="uid://cry7030nd6qv2" path="res://shaders/ps1_models.gdshader" id="2_k5o30"]
+[ext_resource type="Texture2D" uid="uid://dnofsj3b7u0h4" path="res://assets/textures/buildings/tunnel/tunnel_0.jpg" id="3_jv5dg"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_og3ye"]
+render_priority = 0
+shader = ExtResource("2_k5o30")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_jv5dg")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[node name="Tunnel" instance=ExtResource("1_igmw8")]
+
+[node name="Cube_Tunnel_0" parent="Sketchfab_model/ad670f8c52e94173947c2d5d1b293781_fbx/RootNode/Cube" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_og3ye")

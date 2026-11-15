@@ -1,0 +1,96 @@
+[gd_scene load_steps=13 format=3 uid="uid://c8at0u42ehb7o"]
+
+[ext_resource type="PackedScene" uid="uid://dfhiy7bs5byox" path="res://prefabs/decoration/psx_style_chain_fence.glb" id="1_q2a5s"]
+[ext_resource type="Shader" uid="uid://cry7030nd6qv2" path="res://shaders/ps1_models.gdshader" id="2_xk8li"]
+[ext_resource type="Texture2D" uid="uid://bimlnnjnt0ipb" path="res://assets/textures/decorations/chain_fence/psx_style_chain_fence_0.png" id="3_s7lt5"]
+[ext_resource type="Texture2D" uid="uid://b2r3kpa16oh8u" path="res://assets/textures/decorations/chain_fence/psx_style_chain_fence_1.png" id="4_nx52k"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2don3"]
+render_priority = 0
+shader = ExtResource("2_xk8li")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_s7lt5")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cdlpw"]
+render_priority = 0
+shader = ExtResource("2_xk8li")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_nx52k")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_es7cy"]
+render_priority = 0
+shader = ExtResource("2_xk8li")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_nx52k")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_oycoj"]
+render_priority = 0
+shader = ExtResource("2_xk8li")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_s7lt5")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_l0ana"]
+render_priority = 0
+shader = ExtResource("2_xk8li")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_s7lt5")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ax1c0"]
+render_priority = 0
+shader = ExtResource("2_xk8li")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_nx52k")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_oavyk"]
+render_priority = 0
+shader = ExtResource("2_xk8li")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_s7lt5")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8167c"]
+render_priority = 0
+shader = ExtResource("2_xk8li")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_nx52k")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[node name="Chain_Fence" instance=ExtResource("1_q2a5s")]
+
+[node name="Object_4" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_30" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_2don3")
+
+[node name="Object_5" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_30" index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_cdlpw")
+
+[node name="Object_7" parent="Sketchfab_model/root/GLTF_SceneRootNode/TexturesCom_MetalVarious0026_1_seamless_S_002_31" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_es7cy")
+
+[node name="Object_8" parent="Sketchfab_model/root/GLTF_SceneRootNode/TexturesCom_MetalVarious0026_1_seamless_S_002_31" index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_oycoj")
+
+[node name="Object_10" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_001_32" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_l0ana")
+
+[node name="Object_11" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_001_32" index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_ax1c0")
+
+[node name="Object_13" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_004_33" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_oavyk")
+
+[node name="Object_14" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_004_33" index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_8167c")

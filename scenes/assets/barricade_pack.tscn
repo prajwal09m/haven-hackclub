@@ -1,0 +1,128 @@
+[gd_scene load_steps=15 format=3 uid="uid://bxtpjuru4od8r"]
+
+[ext_resource type="PackedScene" uid="uid://pu2ey0rxi561" path="res://prefabs/decoration/psx_style_barricade_pack.glb" id="1_upftn"]
+[ext_resource type="Shader" uid="uid://cry7030nd6qv2" path="res://shaders/ps1_models.gdshader" id="2_ecqgv"]
+[ext_resource type="Texture2D" uid="uid://b4xvqdbs0s3t6" path="res://assets/textures/decorations/barrier_pack/psx_style_barricade_pack_0.png" id="3_n7yiy"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u8whf"]
+render_priority = 0
+shader = ExtResource("2_ecqgv")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_n7yiy")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_difn0"]
+render_priority = 0
+shader = ExtResource("2_ecqgv")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_n7yiy")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_upftn"]
+render_priority = 0
+shader = ExtResource("2_ecqgv")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_n7yiy")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ecqgv"]
+render_priority = 0
+shader = ExtResource("2_ecqgv")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_n7yiy")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_n7yiy"]
+render_priority = 0
+shader = ExtResource("2_ecqgv")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_n7yiy")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kvltk"]
+render_priority = 0
+shader = ExtResource("2_ecqgv")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_n7yiy")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cn7m0"]
+render_priority = 0
+shader = ExtResource("2_ecqgv")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_n7yiy")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yo7jo"]
+render_priority = 0
+shader = ExtResource("2_ecqgv")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_n7yiy")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ubf1y"]
+render_priority = 0
+shader = ExtResource("2_ecqgv")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_n7yiy")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_g0c25"]
+render_priority = 0
+shader = ExtResource("2_ecqgv")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_n7yiy")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lmtad"]
+render_priority = 0
+shader = ExtResource("2_ecqgv")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_n7yiy")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[node name="BarricadePack" instance=ExtResource("1_upftn")]
+
+[node name="Concrete_Material_0" parent="Sketchfab_model/Barricades_fbx/RootNode/Concrete" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_u8whf")
+
+[node name="Circle_001_Material_0" parent="Sketchfab_model/Barricades_fbx/RootNode/Circle_001" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_difn0")
+
+[node name="Circle_001_Material_02" parent="Sketchfab_model/Barricades_fbx/RootNode/Circle_001" index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_upftn")
+
+[node name="Cube_001_Material_0" parent="Sketchfab_model/Barricades_fbx/RootNode/Cube_001" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_ecqgv")
+
+[node name="Cube_003_Material_0" parent="Sketchfab_model/Barricades_fbx/RootNode/Cube_003" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_n7yiy")
+
+[node name="Concrete_001_Material_001_0" parent="Sketchfab_model/Barricades_fbx/RootNode/Concrete_001" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_kvltk")
+
+[node name="Concrete_003_Material_002_0" parent="Sketchfab_model/Barricades_fbx/RootNode/Concrete_003" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_cn7m0")
+
+[node name="Circle_002_Material_003_0" parent="Sketchfab_model/Barricades_fbx/RootNode/Circle_002" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_yo7jo")
+
+[node name="Circle_002_Material_003_02" parent="Sketchfab_model/Barricades_fbx/RootNode/Circle_002" index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_ubf1y")
+
+[node name="Cube_002_Material_004_0" parent="Sketchfab_model/Barricades_fbx/RootNode/Cube_002" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_g0c25")
+
+[node name="Cube_004_Material_005_0" parent="Sketchfab_model/Barricades_fbx/RootNode/Cube_004" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_lmtad")

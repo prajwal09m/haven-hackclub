@@ -1,0 +1,341 @@
+[gd_scene load_steps=47 format=3 uid="uid://dynfnftnwcbth"]
+
+[ext_resource type="PackedScene" uid="uid://dge06w0qfh8j5" path="res://prefabs/buildings/wall_set.glb" id="1_wklcb"]
+[ext_resource type="Shader" uid="uid://cry7030nd6qv2" path="res://shaders/ps1_models.gdshader" id="2_rw7io"]
+[ext_resource type="Texture2D" uid="uid://d3jcr1c33bjj5" path="res://assets/textures/buildings/wall_set/wall_set_6.png" id="3_iy7e4"]
+[ext_resource type="Texture2D" uid="uid://6q833lvwq5hs" path="res://assets/textures/buildings/wall_set/wall_set_0.png" id="3_kjtbc"]
+[ext_resource type="Texture2D" uid="uid://dypo8jkl4h57g" path="res://assets/textures/buildings/wall_set/wall_set_2.png" id="4_82xef"]
+[ext_resource type="Texture2D" uid="uid://c2k88jpnh157g" path="res://assets/textures/buildings/wall_set/wall_set_4.png" id="5_82xef"]
+[ext_resource type="Texture2D" uid="uid://dag5lk25gxl25" path="res://assets/textures/buildings/wall_set/wall_set_7.png" id="7_p0y67"]
+[ext_resource type="Texture2D" uid="uid://biipjqfxoigkd" path="res://assets/textures/buildings/wall_set/wall_set_8.png" id="8_lohak"]
+[ext_resource type="Texture2D" uid="uid://dg5l4efc014yi" path="res://assets/textures/buildings/wall_set/wall_set_9.png" id="9_rwi83"]
+[ext_resource type="Texture2D" uid="uid://c5y0w6wu05gik" path="res://assets/textures/buildings/wall_set/wall_set_16.png" id="10_6ux63"]
+[ext_resource type="Texture2D" uid="uid://b04viofnjub5u" path="res://assets/textures/buildings/wall_set/wall_set_10.png" id="11_ooidc"]
+[ext_resource type="Texture2D" uid="uid://b8ngc5mqopejy" path="res://assets/textures/buildings/wall_set/wall_set_11.png" id="12_2acas"]
+[ext_resource type="Texture2D" uid="uid://crenmvun5d6r7" path="res://assets/textures/buildings/wall_set/wall_set_13.png" id="13_yt64x"]
+[ext_resource type="Texture2D" uid="uid://bn3j4i33h14wx" path="res://assets/textures/buildings/wall_set/wall_set_17.png" id="14_il5hl"]
+[ext_resource type="Texture2D" uid="uid://86j32n3pfd0a" path="res://assets/textures/buildings/wall_set/wall_set_14.png" id="15_afcsx"]
+[ext_resource type="Texture2D" uid="uid://b5s0ibub53lil" path="res://assets/textures/buildings/wall_set/wall_set_15.png" id="16_3w6ii"]
+[ext_resource type="Texture2D" uid="uid://drk073foxauph" path="res://assets/textures/buildings/wall_set/wall_set_18.png" id="17_wsdnl"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p0y67"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_kjtbc")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lohak"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_82xef")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_82xef"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_82xef")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rwi83"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_82xef")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6ux63"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_82xef")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ooidc"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_kjtbc")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2acas"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_kjtbc")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yt64x"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("5_82xef")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_il5hl"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_kjtbc")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_afcsx"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_kjtbc")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3w6ii"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_kjtbc")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wsdnl"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_kjtbc")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kjtbc"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_iy7e4")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hfiwc"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("7_p0y67")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uwc0x"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("8_lohak")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_515ha"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("9_rwi83")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wof1w"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("10_6ux63")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_s0h0n"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("11_ooidc")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rlhu7"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("12_2acas")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5qi42"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("10_6ux63")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_m5g6k"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("13_yt64x")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_he33d"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("14_il5hl")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_py5bh"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("14_il5hl")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_w30fb"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("15_afcsx")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_a6n0d"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("10_6ux63")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ycopr"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("16_3w6ii")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_oisvy"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("14_il5hl")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lv5x7"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("14_il5hl")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7ufub"]
+render_priority = 0
+shader = ExtResource("2_rw7io")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("17_wsdnl")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_wklcb")]
+
+[node name="Object_4" parent="Sketchfab_model/root/GLTF_SceneRootNode/Border_0" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_p0y67")
+
+[node name="Object_6" parent="Sketchfab_model/root/GLTF_SceneRootNode/Jail_001_1" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_lohak")
+
+[node name="Object_8" parent="Sketchfab_model/root/GLTF_SceneRootNode/Ledder-Floor_2" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_82xef")
+
+[node name="Object_10" parent="Sketchfab_model/root/GLTF_SceneRootNode/Ledder-Floor_001_3" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_rwi83")
+
+[node name="Object_12" parent="Sketchfab_model/root/GLTF_SceneRootNode/Jail_4" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_6ux63")
+
+[node name="Object_14" parent="Sketchfab_model/root/GLTF_SceneRootNode/Border_001_5" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_ooidc")
+
+[node name="Object_16" parent="Sketchfab_model/root/GLTF_SceneRootNode/Handrail_6" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_2acas")
+
+[node name="Object_18" parent="Sketchfab_model/root/GLTF_SceneRootNode/Ledder_7" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_yt64x")
+
+[node name="Object_20" parent="Sketchfab_model/root/GLTF_SceneRootNode/Stairs_001_8" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_il5hl")
+
+[node name="Object_22" parent="Sketchfab_model/root/GLTF_SceneRootNode/Stairs-Sides_001_9" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_afcsx")
+
+[node name="Object_24" parent="Sketchfab_model/root/GLTF_SceneRootNode/Stairs-Sides_10" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_3w6ii")
+
+[node name="Object_26" parent="Sketchfab_model/root/GLTF_SceneRootNode/Stairs_11" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_wsdnl")
+
+[node name="Object_28" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cylinder_009_12" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_kjtbc")
+
+[node name="Object_30" parent="Sketchfab_model/root/GLTF_SceneRootNode/Window-Top-Dark_003_13" index="0"]
+transform = Transform3D(0.99999994, -1.7763568e-15, 0, 2.842171e-14, 1, 0, 0, 0, 1, 1.1920929e-07, 2.781689, 0)
+surface_material_override/0 = SubResource("ShaderMaterial_hfiwc")
+
+[node name="Object_32" parent="Sketchfab_model/root/GLTF_SceneRootNode/Bottom-Window_002_14" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_uwc0x")
+
+[node name="Object_34" parent="Sketchfab_model/root/GLTF_SceneRootNode/Blinds_001_15" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_515ha")
+
+[node name="Object_35" parent="Sketchfab_model/root/GLTF_SceneRootNode/Blinds_001_15" index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_wof1w")
+
+[node name="Object_37" parent="Sketchfab_model/root/GLTF_SceneRootNode/Window-Top-Dark_001_16" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_s0h0n")
+
+[node name="Object_50" parent="Sketchfab_model/root/GLTF_SceneRootNode/Door_21" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_rlhu7")
+
+[node name="Object_51" parent="Sketchfab_model/root/GLTF_SceneRootNode/Door_21" index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_5qi42")
+
+[node name="Object_53" parent="Sketchfab_model/root/GLTF_SceneRootNode/Wall_22" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_m5g6k")
+
+[node name="Object_55" parent="Sketchfab_model/root/GLTF_SceneRootNode/Pipe_23" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_he33d")
+
+[node name="Object_57" parent="Sketchfab_model/root/GLTF_SceneRootNode/Pipe-Start_24" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_py5bh")
+
+[node name="Object_59" parent="Sketchfab_model/root/GLTF_SceneRootNode/Double-Door_25" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_w30fb")
+
+[node name="Object_60" parent="Sketchfab_model/root/GLTF_SceneRootNode/Double-Door_25" index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_a6n0d")
+
+[node name="Object_62" parent="Sketchfab_model/root/GLTF_SceneRootNode/Air-Conditioner_26" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_ycopr")
+
+[node name="Object_64" parent="Sketchfab_model/root/GLTF_SceneRootNode/Trash-Can-Body_27" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_oisvy")
+
+[node name="Object_66" parent="Sketchfab_model/root/GLTF_SceneRootNode/Trash-Can-Top_28" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_lv5x7")
+
+[node name="Object_68" parent="Sketchfab_model/root/GLTF_SceneRootNode/Bottom-Window_001_29" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_7ufub")

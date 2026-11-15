@@ -1,0 +1,66 @@
+[gd_scene load_steps=13 format=3 uid="uid://dmgou8c8gwy0o"]
+
+[ext_resource type="PackedScene" uid="uid://dv1ybe23ih8ka" path="res://prefabs/buildings/psx_abandoned_church.glb" id="1_wa6rw"]
+[ext_resource type="Shader" uid="uid://cry7030nd6qv2" path="res://shaders/ps1_models.gdshader" id="2_n1ba5"]
+[ext_resource type="Texture2D" uid="uid://u351iutr1cf6" path="res://assets/textures/buildings/church/psx_abandoned_church_0.jpg" id="3_aipsp"]
+[ext_resource type="Texture2D" uid="uid://bjo7rmel12yma" path="res://assets/textures/buildings/church/psx_abandoned_church_1.jpg" id="4_ktp0d"]
+[ext_resource type="Texture2D" uid="uid://v0212tet8yyn" path="res://assets/textures/buildings/church/psx_abandoned_church_2.jpg" id="5_fqrwp"]
+[ext_resource type="Texture2D" uid="uid://cus1hml4lgmmf" path="res://assets/textures/buildings/church/psx_abandoned_church_3.jpg" id="6_x5cmh"]
+[ext_resource type="Texture2D" uid="uid://drairxc2cs122" path="res://assets/textures/buildings/church/psx_abandoned_church_4.jpg" id="7_abx5c"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2ewc4"]
+render_priority = 0
+shader = ExtResource("2_n1ba5")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_aipsp")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_puo3j"]
+render_priority = 0
+shader = ExtResource("2_n1ba5")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("4_ktp0d")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ooxvk"]
+render_priority = 0
+shader = ExtResource("2_n1ba5")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("5_fqrwp")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_b8vuv"]
+render_priority = 0
+shader = ExtResource("2_n1ba5")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("6_x5cmh")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_r0ppy"]
+render_priority = 0
+shader = ExtResource("2_n1ba5")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("7_abx5c")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[node name="Church" instance=ExtResource("1_wa6rw")]
+
+[node name="PSX Abandoned Church_WoodPlanks_0" parent="Sketchfab_model/PSX Abandoned Church_fbx/RootNode/PSX Abandoned Church" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_2ewc4")
+
+[node name="PSX Abandoned Church_Wood_0" parent="Sketchfab_model/PSX Abandoned Church_fbx/RootNode/PSX Abandoned Church" index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_puo3j")
+
+[node name="PSX Abandoned Church_Bricks_0" parent="Sketchfab_model/PSX Abandoned Church_fbx/RootNode/PSX Abandoned Church" index="2"]
+surface_material_override/0 = SubResource("ShaderMaterial_ooxvk")
+
+[node name="PSX Abandoned Church_Windows_0" parent="Sketchfab_model/PSX Abandoned Church_fbx/RootNode/PSX Abandoned Church" index="3"]
+surface_material_override/0 = SubResource("ShaderMaterial_b8vuv")
+
+[node name="PSX Abandoned Church_Door_0" parent="Sketchfab_model/PSX Abandoned Church_fbx/RootNode/PSX Abandoned Church" index="4"]
+surface_material_override/0 = SubResource("ShaderMaterial_r0ppy")

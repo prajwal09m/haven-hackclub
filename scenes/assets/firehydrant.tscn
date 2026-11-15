@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://kpybrkvjl4xr"]
+
+[ext_resource type="PackedScene" uid="uid://sqm1nlx8d4l3" path="res://prefabs/decoration/psx_low-poly_fire_hydrant.glb" id="1_8rtf8"]
+[ext_resource type="Shader" uid="uid://cry7030nd6qv2" path="res://shaders/ps1_models.gdshader" id="2_4q1qp"]
+[ext_resource type="Texture2D" uid="uid://bw5njpngadkfp" path="res://assets/textures/decorations/fire_hydrant/psx_low-poly_fire_hydrant_0.png" id="3_ru780"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pne4f"]
+render_priority = 0
+shader = ExtResource("2_4q1qp")
+shader_parameter/snap_enabled = true
+shader_parameter/snap_resolution = 148.0
+shader_parameter/albedo_texture = ExtResource("3_ru780")
+shader_parameter/texture_tile = Vector2(1, 1)
+
+[node name="Firehydrant" instance=ExtResource("1_8rtf8")]
+
+[node name="Object_2" parent="Sketchfab_model/4f46b3da029a44f9b5e94f84ad0e59e5_obj_cleaner_materialmerger_gles" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_pne4f")

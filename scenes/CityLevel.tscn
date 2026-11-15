@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://b0j1hagydaq6r"]
+
+[ext_resource type="PackedScene" uid="uid://bxgquktut617g" path="res://scenes/player.tscn" id="1_dojpo"]
+[ext_resource type="Shader" uid="uid://br0xd1jieyblf" path="res://shaders/ps1_post_process.gdshader" id="3_df0lk"]
+[ext_resource type="PackedScene" uid="uid://dggpppu6fd3d6" path="res://scenes/levels/city.tscn" id="3_i6x8u"]
+[ext_resource type="AudioStream" uid="uid://bsa2khqvs3xi8" path="res://assets/audio/background/bg-loop.wav" id="4_3883t"]
+[ext_resource type="AudioStream" uid="uid://cehnkdpkipe4f" path="res://assets/audio/background/ambient.wav" id="5_lwl3g"]
+[ext_resource type="PackedScene" uid="uid://b38drs2hwh2yv" path="res://scenes/assets/bouncing_head.tscn" id="6_4bnrd"]
+
+[sub_resource type="Sky" id="Sky_df0lk"]
+
+[sub_resource type="Environment" id="Environment_d0gs8"]
+background_mode = 2
+sky = SubResource("Sky_df0lk")
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_sky_contribution = 0.6
+tonemap_mode = 1
+glow_strength = 0.0
+glow_bloom = 0.2
+fog_enabled = true
+fog_light_color = Color(0.79607844, 0.8392157, 0.8784314, 1)
+fog_density = 0.02
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.2
+volumetric_fog_albedo = Color(0.8117647, 0.84313726, 0.8745098, 1)
+volumetric_fog_anisotropy = 0.3
+volumetric_fog_detail_spread = 6.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1fpmp"]
+shader = ExtResource("3_df0lk")
+shader_parameter/viewport_size = Vector2(640, 480)
+shader_parameter/virtual_resolution = Vector2(320, 240)
+
+[node name="CityLevel" type="Node3D" unique_id=1987927715]
+
+[node name="City" parent="." unique_id=274689763 instance=ExtResource("3_i6x8u")]
+
+[node name="Lighting" type="Node3D" parent="." unique_id=1716262890]
+
+[node name="MoonLight" type="DirectionalLight3D" parent="Lighting" unique_id=435439671]
+transform = Transform3D(0.9444539, -0.31198707, -0.10330042, 0.054543, -0.16116339, 0.9854194, -0.3240864, -0.9363175, -0.13519467, 0, 0, 0)
+light_color = Color(0.8745098, 0.90588236, 0.94509804, 1)
+shadow_enabled = true
+shadow_bias = 0.05
+directional_shadow_max_distance = 150.0
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Lighting" unique_id=609772188]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 1.9791348, 4.978924, -0.43585253)
+visible = false
+light_color = Color(0.91517925, 0.7700389, 0, 1)
+light_energy = 6.82
+spot_range = 12.362314
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1323619026]
+environment = SubResource("Environment_d0gs8")
+
+[node name="Player" parent="." unique_id=175362557 instance=ExtResource("1_dojpo")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -96.65494, 1.3144445, 43.357147)
+jump_force = 0.0
+
+[node name="Loop" type="AudioStreamPlayer2D" parent="." unique_id=2012972136]
+stream = ExtResource("4_3883t")
+volume_db = -5.0
+autoplay = true
+
+[node name="Ambient" type="AudioStreamPlayer2D" parent="." unique_id=499353180]
+stream = ExtResource("5_lwl3g")
+autoplay = true
+
+[node name="BouncingHead" parent="." unique_id=216686586 instance=ExtResource("6_4bnrd")]
+transform = Transform3D(-8.742278e-08, 0, -2, 0, 2, 0, 2, 0, -8.742278e-08, 28.18659, 0.49201155, 53.930634)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1632005248]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1376826404]
+material = SubResource("ShaderMaterial_1fpmp")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
